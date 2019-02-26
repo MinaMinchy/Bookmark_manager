@@ -1,10 +1,11 @@
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
+# require File.join(File.dirname(__FILE__), '..', 'app.rb')
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
 require 'capybara'
 # require 'features/web_helpers'
 require './app.rb'
+require 'pg'
 
 ENV['RACK_ENV'] = 'test'
 

@@ -7,11 +7,7 @@ class Bookmarks < Sinatra::Base
   end
 
   get '/bookmarks' do
-    @bookmarks = [
-      "http://www.makersacademy.com",
-      "http://www.github.com",
-      "http://www.google.com"
-  ]
+    @bookmarks = Bookmark.all
 
     erb :'bookmarks/index'
   end
