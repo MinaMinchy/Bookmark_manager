@@ -1,5 +1,5 @@
 # User stories
-# Bookmark Manger
+# Bookmark Manager
 
 As an internet user,
 So that I can easily return to the pages that are important to me,
