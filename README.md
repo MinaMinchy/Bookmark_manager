@@ -37,3 +37,7 @@ rspec
 To run linting:
 
 rubocop
+
+# Setting up a Testing Environment
+
+Run the commands in psql from the db/migrations/01_create_bookmarks_table.sql

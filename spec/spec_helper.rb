@@ -3,7 +3,7 @@ require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
 require 'capybara'
-# require 'features/web_helpers'
+require 'features/web_helper'
 require './app.rb'
 require 'pg'
 
@@ -28,6 +28,9 @@ Capybara.app = Bookmarks
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+ config.before(:each) do
+   clear_test
+ end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
