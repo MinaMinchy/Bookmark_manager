@@ -1,9 +1,9 @@
 require 'pg'
 
 class Bookmark
-  @bookmark_array ||=[]
 
   def self.all
+    @bookmark_array =[]
     conn = PG.connect(dbname: 'bookmark_manager' )
     conn.exec( "SELECT * FROM bookmarks" ) do |result|
       result.each do |row|
