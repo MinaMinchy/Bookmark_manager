@@ -7,6 +7,7 @@ require 'features/web_helper'
 require './app.rb'
 require 'pg'
 
+
 ENV['RACK_ENV'] = 'test'
 
 Capybara.app = Bookmarks
